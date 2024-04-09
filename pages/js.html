@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/stylesjs.css" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <a href="../index.html">Voltar</a>
+    <h1>JavaScript</h1>
+    <h2>Métodos Array</h2>
+    <pre>
+      <code>
+    methods = [
+      "join",
+      "reverse",
+      "sort",
+      "push",
+      "pop",
+      "shift",
+      "unshift",
+      "splice",
+      "concat",
+      "slice",
+      "indexOf",
+      "lastIndexOf",
+      "forEach",
+      "map",
+      "reduce",
+      "reduceRight",
+      "filter",
+      "some",
+      "every",
+      "isArray",
+    ],
+  </code>
+</pre>
+    <div>
+      <h3>O que é um array?</h3>
+      <p>
+        Arrays são objetos semelhantes a listas que vêm com uma série de métodos
+        embutidos para realizar operações de travessia e mutação.
+        <pre>
+          <code>
+              const Array = ["elemento indice 0", "elemento indice 1"]
+          </code>
+          </pre>
+        </p>
+        <div>
+          <strong><h4>.lenght</h4></strong>
+          <p>utilizado para saber o tamaho maximo de elementos do array</p>
+          <pre>
+            <code>
+              const Array = ["elemento indice 0", "elemento indice 1"];
+              console.log(Array.length);
+            </code>
+            </pre>
+            <p>O retorno do console será 2, pois é referente a quantidade de elementos</p>
+          </div>
+          <div>
+            <strong><h4>.pop</h4></strong>
+            <p>O método pop() remove o último elemento de um array e retorna aquele elemento.</p>
+            <pre>
+              <code>
+                const Array = ["elemento indice 0", "elemento indice 1"];
+                Array.pop();
+                console.log(Array);
+              </code>
+              </pre>
+              <p>o retorno será -> [ 'elemento indice 0' ]</p>
+            </div>
+
+            <div>
+              <strong><h4>.shift</h4></strong>
+              <p>O método shift() remove o primeiro elemento de um array e retorna aquele elemento.</p>
+              <pre>
+                <code>
+                  const Array = ["elemento indice 0", "elemento indice 1"];
+                  Array.shift();
+                  console.log(Array);
+
+                </code>
+                </pre>
+                <p>o retorno será -> [ 'elemento indice 1' ]</p>
+              </div>
+  
+              <div>
+                <strong><h4>.unshift</h4></strong>
+                <p>O método unshift() Adicionar um item no inicio do Array</p>
+                <pre>
+                  <code>
+                    const Array = ["elemento indice 0", "elemento indice 1"];
+                    Array.unshift("adicionando elemento ao inicio");
+                    console.log(Array);
+                  </code>
+                  </pre>
+                  <p>o retorno será ->
+                    [
+                    'adicionando elemento ao inicio',
+                    'elemento indice 0',
+                    'elemento indice 1'
+                  ]
+                </p>
+                </div>
+
+            <div>
+              <strong><h4>.push</h4></strong>
+              <p>O método push() Adicionar um item ao final do Array</p>
+              <pre>
+                <code>
+                  const Array = ["elemento indice 0", "elemento indice 1"];
+                  Array.push("elemento adicionado");
+                  console.log(Array);
+
+                </code>
+                </pre>
+                <p>o retorno será -> [ 'elemento indice 0', 'elemento indice 1', 'elemento adicionado' ], que indica que ele foi adicionado do Array</p>
+              </div>
+
+              <div>
+                <strong><h4>.splice</h4></strong>
+                <p>O método splice() Remove itens de uma posição de índice</p>
+                <pre>
+                  <code>
+                    const Array = ["elemento indice 0", "elemento indice 1"];
+                    Array.splice(0,1); //posição 0 remove 1 item
+                    console.log(Array);
+                  </code>
+                  </pre>
+                  <p>o retorno será ->  [ 'elemento indice 1' ]</p>
+                </div>
+              <div>
+                <strong><h4>.slice</h4></strong>
+                <p>O método slice() Copia um Array</p>
+                <pre>
+                  <code>
+                    const Array = ["elemento indice 0", "elemento indice 1"];
+                    const ArrayNew = Array.slice();
+                    console.log(ArrayNew);
+                  </code>
+                  </pre>
+                  <p>o retorno será ->  [ 'elemento indice 0', 'elemento indice 1' ]</p>
+                </div>
+
+
+                <div>
+                  <strong><h4>.map</h4></strong>
+                  <p>O método map() invoca a função callback passada por argumento para cada elemento do Array e devolve um novo Array como resultado.</p>
+                  <pre>
+                    <code>
+                      const Array = ["elemento índice 0", "elemento índice 1"];
+                      const modifiedArray = Array.map(element => element + " modificado");
+                      console.log(modifiedArray);
+
+                    </code>
+                    </pre>
+                    <p>o retorno será -> [ 'elemento índice 0 modificado', 'elemento índice 1 modificado' ]</p>
+                  </div>
+    </div>
+  </body>
+</html>
