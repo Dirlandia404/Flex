@@ -6,27 +6,42 @@
   --cor-5: #9e6b7c;
   --cor-6: #d3d3d3;
 }
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+}
 div {
   margin-bottom: 2em;
-  height: 150px;
+  height: 50vh;
+  width: 50vw;
 }
 .box {
   background-color: var(--cor-5);
   width: 50px;
   height: 50px;
+  background-image: url(laranja.png);
+  background-size: cover;
 }
 .box2 {
   background-color: var(--cor-4);
   width: 50px;
   height: 50px;
+  background-image: url(preto.png);
+  background-size: cover;
 }
 .box3 {
   background-color: var(--cor-3);
   width: 50px;
   height: 50px;
+  background-image: url(branco.png);
+  background-size: cover;
 }
 pre {
   background-color: var(--cor-6);
+  width: 50vw;
 }
 code {
   display: flex;
@@ -36,9 +51,7 @@ code {
 h2 {
   text-align: center;
 }
-section {
-  padding: 5em;
-}
+
 .center {
   background-color: var(--cor-1);
   display: flex;
